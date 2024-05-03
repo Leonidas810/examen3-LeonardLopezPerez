@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    height: 60px;
+    background-color: #4CAF50; /* Color verde */
+    align-items: center;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Espaciado uniforme entre enlaces */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+nav a:hover {
+    color: #FF5733; /* Cambio de color al pasar el mouse */
+}
+
+.nav-item.active {
+    color: #FFC300; /* Color amarillo para el elemento activo */
+    font-weight: bold;
+}

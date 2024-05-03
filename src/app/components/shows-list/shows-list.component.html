@@ -1,0 +1,8 @@
+<div class="row m-2 row-cols-1 row-cols-md-4 row-cols-lg-5 g-4">
+    <ng-container *ngFor="let show of tvShows">
+        <div class="col">
+            <app-show [show]="show" class="card shadow h-100">
+            </app-show>
+        </div>
+    </ng-container>
+</div>

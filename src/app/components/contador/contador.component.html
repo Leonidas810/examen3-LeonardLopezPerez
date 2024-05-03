@@ -1,0 +1,25 @@
+<div class="container">
+    <h1 class="title">Contador Component</h1>
+    <p class="counter">Contador {{contador}}</p>
+
+    <div class="buttons">
+        <button *ngIf="contador > 0" (click)="decrementa()" class="btn">Decrementar</button>
+        <button *ngIf="contador < 20" (click)="incrementa()" class="btn">Incrementar</button>
+    </div>
+
+    <div class="list">
+        <ul>
+            <li *ngFor="let nombre of nombres; index as i" class="list-item">{{i+1}} - {{nombre}}</li>
+        </ul>
+    </div>
+
+    <div class="other-list">
+        <ol>
+            <li *ngFor="let _ of [1, 2, 3, 4]" class="other-list-item">Roberto</li>
+        </ol>
+    </div>
+
+    <div class="button-list">
+        <button *ngFor="let nombre of nombres" class="btn">{{nombre}}</button>
+    </div>
+</div>

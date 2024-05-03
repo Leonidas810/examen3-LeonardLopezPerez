@@ -1,0 +1,22 @@
+<div class="card h-100" [ngClass]="{'selected': show.isSelected}" (click)="onSelect()">
+    <div class="card-buttons">
+        <button type="button" class="btn btn-circle btn-danger" (click)="deleteShow()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <button (click)="dataEdit()" data-bs-toggle="modal" data-bs-target="#editShow" type="button" class="btn btn-circle btn-info">
+            <span aria-hidden="true">✎</span>
+        </button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            class="btn btn-circle btn-secondary">
+            <span aria-hidden="true">👁</span>
+        </button>
+    </div>
+    <img [src]="show.image" class="card-img-top img-fluid rounded-top" alt="image{{show.title}}">
+    <div class="card-body">
+        <h5 class="card-title mb-0">{{show.title}}</h5>
+        <p class="card-text">Episodes: {{show.episodes}} </p>
+    </div>
+    <div *ngIf="show.year>=2000" class="card-footer bg-light">
+        <small class="text-muted">Year: {{show.year}}</small>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta esto según el tamaño deseado */
+  }
+  
+  .container h1,
+  .container button {
+    margin: 10px; /* Ajusta esto según el espacio deseado entre el texto y el botón */
+  }
+  

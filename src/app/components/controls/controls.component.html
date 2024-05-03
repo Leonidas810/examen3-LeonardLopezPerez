@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-end align-items-center m-2">
+    <button data-bs-toggle="modal" data-bs-target="#addShow" type="button" class="btn btn-secondary">Nueva Serie</button>
+    <button (click)="onClickChangeOrder()" class="btn btn-secondary mx-2">Invertir Orden</button>
+    <input type="text" [(ngModel)]="searchTerm" class="form-control me-2" placeholder="Buscar...">
+    <button (click)="onClickSearch()" class="btn btn-secondary">Buscar</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addShow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva TV Serie</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="passwordHelpBlock" class="form-text" style="color: red;">
+                    {{ logs }}
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Título:</label>
+                    <input type="text" class="form-control" id="title" name="title" required [(ngModel)]="titleInput">
+                </div>
+
+                <div class="mb-3">
+                    <label for="year" class="form-label">Año:</label>
+                    <input type="number" class="form-control" id="year" name="year" [(ngModel)]="yearInput">
+                </div>
+
+                <div class="mb-3">
+                    <label for="episodes" class="form-label">Episodios:</label>
+                    <input type="number" class="form-control" id="episodes" name="episodes" required
+                        [(ngModel)]="episodesInput">
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">URL de la imagen:</label>
+                    <input type="url" class="form-control" id="image" name="image" [(ngModel)]="imageInput">
+                </div>
+
+                <div class="mb-3">
+                    <label for="id" class="form-label">ID:</label>
+                    <input type="number" class="form-control" id="id" name="id" required [(ngModel)]="idInput">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" (click)="onClickAdd()" class="btn btn-primary">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
