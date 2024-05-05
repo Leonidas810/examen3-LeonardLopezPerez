@@ -1,0 +1,23 @@
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+  }
+  
+  @media (min-width: 576px) {
+    .card {
+      margin-bottom: 15px; /* Espacio entre las tarjetas en dispositivos medianos y superiores */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      margin-bottom: 20px; /* Espacio entre las tarjetas en dispositivos grandes y superiores */
+    }
+  }
+  

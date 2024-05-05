@@ -1,5 +1,11 @@
-<h1 class="title">Control Panel</h1>
-<app-controls></app-controls>
-<app-shows-list [tvShows]="tvShows"></app-shows-list>
-<app-modal></app-modal>
-<app-modal-edit></app-modal-edit>
+<div class="container">
+    <h1 class="title">Control Panel</h1>
+    <div class="controls-container">
+        <app-controls></app-controls>
+        <app-shows-list [tvShows]="tvShows"></app-shows-list>
+    </div>
+    <div class="modals-container">
+        <app-modal></app-modal>
+        <app-modal-edit></app-modal-edit>
+    </div>
+</div>

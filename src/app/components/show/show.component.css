@@ -1,16 +1,23 @@
-.card-buttons {
+.card {
     position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+  }
+  
+  .card-buttons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.5); /* Blando */
-}
-
-.btn-circle {
+  }
+  
+  .btn-circle {
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -19,19 +26,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.btn-info {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-circle:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cambio de color al pasar el cursor */
+  }
+  
+  .btn-info {
     background-color: #17a2b8;
-    border-color: #17a2b8;
-}
-
-.btn-danger {
+  }
+  
+  .btn-danger {
     background-color: #dc3545;
-    border-color: #dc3545;
-}
-
-.btn-secondary {
+  }
+  
+  .btn-secondary {
     background-color: #6c757d;
-    border-color: #6c757d;
-}
+  }
+  

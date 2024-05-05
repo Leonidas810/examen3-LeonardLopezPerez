@@ -1,13 +1,28 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ajusta esto según el tamaño deseado */
-  }
-  
-  .container h1,
-  .container button {
-    margin: 10px; /* Ajusta esto según el espacio deseado entre el texto y el botón */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f3f3f3; 
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.container button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #007bff; 
+  color: #fff; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.container button:hover {
+  background-color: #0056b3; 
+}

@@ -1,3 +1,36 @@
-.title {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; 
+  }
+  
+  .title {
     font-style: italic;
-}
+    font-size: 2.5rem; 
+    color: #333;
+    margin-bottom: 30px; 
+  }
+  
+  .controls-container,
+  .modals-container {
+    width: 100%;
+    max-width: 800px; 
+  }
+  
+  .controls-container {
+    margin-bottom: 30px; 
+  }
+  
+  .modals-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  app-modal,
+  app-modal-edit {
+    flex: 1; 
+    margin: 0 10px; 
+  }
+  
